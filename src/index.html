@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+    <section class="welcomePage">
+      <div
+        class="loginPage w-full h-screen bg-[#004643] flex items-center p-20 flex-col gap-5"
+      >
+        <div
+          class="quizBox w-40 h-40 rounded-full bg-white flex justify-center items-center flex-col relative"
+        >
+          <h1 class="font-semibold text-[#004643] text-[40px]">Quiz</h1>
+          <h2
+            class="font-semibold text-[#F8C660] text-[20px] absolute top-24 left-20"
+          >
+            Khelo
+          </h2>
+        </div>
+        <br />
+        <br />
+        <br />
+        <form action="" class="quizForm flex justify-center flex-col gap-5">
+          <label for="userName" class="font-semibold text-[18px] text-[#EEEFF2]"
+            >Enter Your Name:</label
+          >
+          <input
+            type="text"
+            placeholder="John Deh..."
+            name="userName"
+            class="w-[383px] h-[53px] bg-transparent border p-2 rounded-3xl outline-none text-white"
+          />
+          <input
+            type="submit"
+            value="Start"
+            class="submitButton bg-[#F8C660] text-white font-semibold text-[24px] w-[383px] h-[60px] rounded-3xl hover:bg-[#d19e37] cursor-pointer"
+          />
+        </form>
+      </div>
+    </section>
+    <section
+      class="quizScreen w-[100%] h-[100vh] bg-[#f5f5f5] flex justify-center items-center p-16 flex-col gap-10"
+    >
+      <div
+        class="quizBox w-[383px] h-[229px] rounded-3xl shadow-md bg-white px-5 py-8 relative flex justify-center items-center flex-col"
+      >
+        <div
+          class="timer w-[86px] h-[86px] bg-[#ABD1C6] rounded-full justify-center items-center flex absolute top-[-50px]"
+        >
+          <div
+            class="whiteCircle w-[70px] h-[70px] rounded-full bg-white text-[#004643] font-semibold text-[32px] flex items-center justify-center"
+          >
+            30
+          </div>
+        </div>
+        <h3 class="font-semibold text-[18px]">
+          In what year did the United States host the FIFA World Cup for the
+          first time?
+        </h3>
+      </div>
+      <div class="options flex justify-between items-center flex-col gap-5">
+        <div
+          class="option w-[383px] h-[53px] rounded-3xl bg-white p-4 flex justify-between items-center shadow-sm"
+        >
+          <h3 class="font-semibold text-[20px]">1986</h3>
+          <div class="check w-5 h-5 rounded-full border-2 border-black"></div>
+        </div>
+        <div
+          class="option w-[383px] h-[53px] rounded-3xl bg-[#ABD1C6] p-4 flex justify-between items-center shadow-sm"
+        >
+          <h3 class="font-semibold text-[20px]">1994</h3>
+          <div
+            class="check w-5 h-5 rounded-full bg-[#004643] flex justify-center items-center"
+          >
+            <i class="fas fa-check text-white text-[14px]"></i>
+          </div>
+        </div>
+        <div
+          class="option w-[383px] h-[53px] rounded-3xl bg-white p-4 flex justify-between items-center shadow-sm"
+        >
+          <h3 class="font-semibold text-[20px]">2002</h3>
+          <div class="check w-5 h-5 rounded-full border-2 border-black"></div>
+        </div>
+        <div
+          class="option w-[383px] h-[53px] rounded-3xl bg-white p-4 flex justify-between items-center shadow-sm"
+        >
+          <h3 class="font-semibold text-[20px]">2010</h3>
+          <div class="check w-5 h-5 rounded-full border-2 border-black"></div>
+        </div>
+        <div
+          class="nextButton w-[383px] h-[59px] bg-[#004643] rounded-3xl font-semibold text-[24px] text-white flex justify-center items-center hover:bg-[#004643c4]"
+        >
+          Next
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
